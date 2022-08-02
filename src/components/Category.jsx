@@ -1,0 +1,94 @@
+import React, { useEffect,useState } from 'react'
+
+export default function Category(props) {
+
+    useEffect(() => {
+        setCheckedInputs([])
+    },[]);
+
+    const [checkedInputs, setCheckedInputs] = useState([]);
+
+    function changeHandler(checked, id){
+        if (checked) { setCheckedInputs( [...checkedInputs, id] ) } 
+        else { setCheckedInputs( checkedInputs.filter((el) => el !== id) ) }
+        console.log(checkedInputs)
+    };
+
+
+    function categotyList (props) {
+
+
+
+        if (props.type === "list"){
+            let categotyList = [];
+            for (let i = 0; i < props.data.length; i++) {
+    
+                categotyList.push(
+    
+                    <label
+                        className='category_item'
+                        key={i}
+                        htmlFor={props.data[i].name}
+                    >
+    
+                        <input
+                            type="checkbox"
+                            onChange={(e)=> changeHandler(e.currentTarget.checked, props.data[i].name) }
+                            checked={checkedInputs.includes(props.data[i].name) ? true : false}
+                            id={props.data[i].name}
+                        />
+    
+                        {props.data[i].name}
+    
+                        <span> {props.data[i].total} </span>
+    
+                    </label>
+                )
+            }
+            return categotyList
+        }
+
+        else if (props.type === "tags"){
+            let categotyList = [];
+            for (let i = 0; i < props.data.length; i++) {
+    
+                categotyList.push(
+                        <label
+                            className='category_item'
+                            key={i}
+                            htmlFor={props.data[i]}
+                        >
+        
+                            <input
+                                type="radio"
+                                onChange={(e)=> changeHandler(e.currentTarget.checked, props.data[i]) }
+                                checked={checkedInputs.includes(props.data[i]) ? true : false}
+                                id={props.data[i]}
+                            />
+        
+                            {props.data[i]}
+        
+                        </label>
+                )
+            }
+            return <div className='tags_wrap'>{categotyList}</div>
+        }
+    }
+
+return (
+    <div className='category'>
+        <div className='category_title'>
+            <span className='category_logo'>
+                <img src={props.logo} alt={""} />
+                <span >{props.title}</span>
+            </span>
+
+
+            <input type="button" value="×" className='category_clear_btn'/>
+        </div>
+
+
+        {categotyList (props)}
+    </div>
+)
+}
