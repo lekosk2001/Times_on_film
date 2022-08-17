@@ -61,28 +61,28 @@ return (
     <aside>
         <Category
             title={"구분"}
-            logo={<img src='' alt='구분'/>}
+            logo='/server/img/film-solid.svg'
             type={"list"}
             data={typeArr}
         />
 
         <Category
             title={"지역"}
-            logo={<img src='' alt='지역'/>}
+            logo='server/img/globe-solid.svg'
             type={"list"}
             data={countryArr}
         />
 
         <Category
             title={"각색"}
-            logo={<img src='' alt='각색'/>}
+            logo='server/img/pen-nib-solid.svg'
             type={"list"}
             data={adaptationArr}
         />
         
         <Category
             title={"키워드"}
-            logo={<img src='' alt='키워드'/>}
+            logo='server/img/tag-solid.svg'
             type={"tags"}
             data={uniqueKeyword}
         />

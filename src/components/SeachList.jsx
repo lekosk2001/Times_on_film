@@ -26,7 +26,7 @@ export default function SeachList(props) {
         // }
     },[]);
 
-    console.log(document.querySelectorAll(".contents_box").length)
+    // console.log(document.querySelectorAll(".contents_box").length)
 
     const totalContentsNumber =
         props.contents_all.length.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -34,7 +34,7 @@ export default function SeachList(props) {
     
     function handleClickRadio(e){
         setX(e.target.value)
-        console.log(e.target.value)
+        // console.log(e.target.value)
 
         lists.forEach((list)=>{
 			list.classList.add("hidden");
@@ -56,11 +56,11 @@ export default function SeachList(props) {
                     <input type="button" className="active"/>
                 </div>
 
-                <div className='contents_total'>
+                <h4 className='contents_total'>
                     총{" "}
-                    <span className='font_max font_bold color_blue'> {totalContentsNumber} </span>
+                    <h2> {totalContentsNumber} </h2>
                     {" "}개의 작품을 정리하였습니다.
-                </div>
+                </h4>
 
                 <div className='tabs_wrap'>
                     <input

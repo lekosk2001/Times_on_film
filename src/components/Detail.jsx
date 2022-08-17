@@ -62,29 +62,29 @@ return (
                 </div>
 
                 <div className='detail_title_box'>
-                    <div className='detail_title_mini'>{props.content.release+" │ "+props.content.country}</div>
-                    <div className='detail_title'>{text_space(props.content.title)}</div> 
+                    <p className='detail_title_mini'>{props.content.release+" │ "+props.content.country}</p>
+                    <h2 className='detail_title'>{text_space(props.content.title)}</h2> 
                 </div>
 
                 <div className='left_info_box'>
                     <div className='left_info_item'>
-                        <span className='info_title'>구분</span>
-                        <span className='info_text'>{text_space(props.content.type)}</span>
+                        <h4 className='info_title'>구분</h4>
+                        <p className='info_text'>{text_space(props.content.type)}</p>
                     </div>
 
                     <div className='left_info_item'>
-                        <span className='info_title'>장르</span>
-                        <span className='info_text'>{text_space(props.content.genre)}</span>
+                        <h4 className='info_title'>장르</h4>
+                        <p className='info_text'>{text_space(props.content.genre)}</p>
                     </div>
 
                     <div className='left_info_item'>
-                        <span className='info_title'>재생시간</span>
-                        <span className='info_text'>{text_space(props.content.playTime)}</span>
+                        <h4 className='info_title'>재생시간</h4>
+                        <p className='info_text'>{text_space(props.content.playTime)}</p>
                     </div>
 
                     <div className='left_info_item'>
-                        <span className='info_title'>제작자</span>
-                        <span className='info_text'>{text_space(props.content.creater)}</span>
+                        <h4 className='info_title'>제작자</h4>
+                        <p className='info_text'>{text_space(props.content.creater)}</p>
                     </div>
 
                 </div>
@@ -97,32 +97,32 @@ return (
                 </div>
 
                 <div className='right_info_item'>
-                    <div className='info_title'>시놉시스</div>
-                    <div className='info_text'>{props.content.synopsis}</div>
+                    <h4 className='info_title'>시놉시스</h4>
+                    <p className='info_text'>{props.content.synopsis}</p>
                 </div>
 
                 <div className='right_info_item'>
-                    <div className='info_title'>출연진</div>
-                    <span className='info_text'>{text_space(props.content.cast)}</span>
+                    <h4 className='info_title'>출연진</h4>
+                    <p className='info_text'>{text_space(props.content.cast)}</p>
                 </div>
 
                 <div className='right_info_item'>
-                    <div className='info_title'>배경</div>
-                    <span className='info_text'>{props.content.category}</span>
-                    <span className='info_text color_40per'>{" │ "}</span>
-                    <span className='info_text'>{text_space(props.content.background)}</span>
+                    <h4 className='info_title'>배경</h4>
+                    <p className='info_text'>{props.content.category}</p>
+                    <p className='info_text color_40per'>{" │ "}</p>
+                    <p className='info_text'>{text_space(props.content.background)}</p>
                 </div>
                 
                 <div className='right_info_item'>
-                    <div className='info_title'>각색정도</div>
-                    <div className='info_text'>{text_space(props.content.adaptation)}</div>
+                    <h4 className='info_title'>각색정도</h4>
+                    <p className='info_text'>{text_space(props.content.adaptation)}</p>
                 </div>
 
                 <div className='right_info_item '>
-                    <div className='info_title'>키워드</div>
-                    <div className='info_keyword_box'>
+                    <h4 className='info_title'>키워드</h4>
+                    <p className='info_keyword_box'>
                         {keywords}
-                    </div>
+                    </p>
                 </div>
 
             </span>

@@ -6,8 +6,8 @@ export default function Content(props) {
     <li className='content' key={props.id}>
         <Link to={props.link} >
             <div className='content_img' > <img src={"/server/img/"+props.img} alt="" /> </div>
-            <div className='content_title'>{props.title}</div>
-            <div className='content_release font_mini color_40per'>{props.release[0]+". "+props.release[1]+"."}</div>
+            <h4 className='content_title'>{props.title}</h4>
+            <p className='content_release font_mini color_40per'>{props.release[0]+". "+props.release[1]+"."}</p>
         </Link>
     </li>
     )

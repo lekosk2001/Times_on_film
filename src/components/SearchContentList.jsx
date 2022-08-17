@@ -2,7 +2,6 @@ import Content from './Content'
 import React, { useEffect } from 'react'
 export default function SearchContentList(props) {
 
-
     useEffect(() => {
         window.scroll({
             top: 0,
@@ -11,7 +10,6 @@ export default function SearchContentList(props) {
         });
     },[]);
     
-
 
     let list = [];
     props.contents_all.map(
@@ -29,16 +27,16 @@ export default function SearchContentList(props) {
         }
     )
 
-
     let tags = [];
+    let unictags=[];
     for (let j = 0; j < list.length; j++) {
         list[j].props.keyword.forEach(word => {
-            tags.push(<span key={word+j}>{"# "+word}</span>)
+            if(!tags.includes(word)){
+                tags.push(word);
+                unictags.push(<li key={word+j}><p>{"# "+word}</p></li>);
+            }
         });
     }
-
-
-
 
 return (
 <li className={'list '+props.title.replace(/ /g,"")}>
@@ -46,8 +44,8 @@ return (
 
         <div className='list_upside' onClick={()=>{document.getElementById(props.id).click()}}>
             <span>
-                    <span className='list_title'> {props.title} </span>
-                    <span className='list_age'> {props.age} </span>
+                    <h2 className='list_title'> {props.title} </h2>
+                    <h4 className='list_age'> {props.age} </h4>
             </span>
             
             <span className='font_mini color_40per'>전체보기</span>
@@ -55,7 +53,9 @@ return (
         </div>
 
     <div className='list_tags'>
-        {tags}
+        <ul>
+            {unictags}
+        </ul>
     </div>
 
     </div>

@@ -79,8 +79,8 @@ return (
     <div className='category'>
         <div className='category_title'>
             <span className='category_logo'>
-                <img src={props.logo} alt={""} />
-                <span >{props.title}</span>
+                <img src={props.logo} alt={props.title} />
+                <span>{props.title}</span>
             </span>
 
 

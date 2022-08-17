@@ -7,9 +7,9 @@ import {
 } from "react-router-dom";
 
 import Header from "./components/Header";
-import Home from "./pages/home";
-import Search from "./pages/search";
-import Bookmark from "./pages/bookmark";
+import Home from "./pages/Home";
+import Search from "./pages/Search";
+import Bookmark from "./pages/Bookmark";
 import NotFound from './pages/NotFound';
 import contents_all from './server/contents_all'
 
@@ -29,7 +29,7 @@ export default function App() {
 			</main>
 
 			<footer>
-				© 2022 TIMES ON FILM - 역사별 영상물 검색엔진
+				<p>© 2022 TIMES ON FILM - 역사별 영상물 검색엔진</p>
 			</footer>
 
 	</BrowserRouter>
