@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# TIMES ON FILM
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ReactJS로 구현된 프론트엔드 소스
 
-## Available Scripts
+## TIMES ON FILM 이란?
 
-In the project directory, you can run:
+타임즈 온 필름은 역사별 컨텐츠 검색엔진입니다.
 
-### `npm start`
+## 주요기능
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`인류의 역사를 비추는 컨텐츠`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 시대별로 정리된 영화와 드라마
 
-### `npm test`
+고대시대부터 현대까지 역사를 담은 컨텐츠들을 정리했습니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`역사적 사건 별로 검색`
 
-### `npm run build`
+### 인류사에 큰 획을 남긴 사건들
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+인류의 흥망성쇠를 결정한 역사적 사건들을 확인하세요.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`보고싶은 영화, 드라마를 즐겨찾기`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 컨텐츠를 찜하고, 평가를 공유
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+컨텐츠를 보관함에 담거나, 컨텐츠를 평가할 수 있습니다.
