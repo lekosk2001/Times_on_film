@@ -81,9 +81,9 @@ return (
         </div>
 
         <div>
-            <Link to="/search"><div className="film_text">근세
-                <div className='film_mini' >16세기 - 18세기 중반</div>
-            </div></Link>
+            <Link to="/search"><h4 className="film_text">근세
+                <p className='film_mini' >16세기 - 18세기 중반</p>
+            </h4></Link>
             <div className="film"><Link to="/search"><div className='film_box'><img src="server/img/2014_roaringcurrents.jpg" alt="" /></div></Link></div>
             <div className="film_text"/>
         </div>

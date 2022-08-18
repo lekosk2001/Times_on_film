@@ -276,12 +276,12 @@ footer{
 
 		}
 
-		.film_container a div{
+		.film_container a h4, .film_container a h4 p{
 			transition: all 0.2s ease;
 		}
 
 
-		.film_container > div:hover div{
+		.film_container > div:hover h4, .film_container > div:hover h4 p{
 			color: white;
 		}
 
@@ -464,7 +464,6 @@ aside{
 }
 
 .contents_total{
-	font-weight: 400;
 	margin-bottom: 10px;
 	display: flex;
 	flex-direction: row;
@@ -472,8 +471,13 @@ aside{
 	align-items: center;
 }
 
+
 .contents_total h2{
 	color: var(--color_blue);
+}
+
+.contents_total h4{
+	font-weight: 400;
 }
 
 .list_viewOption{

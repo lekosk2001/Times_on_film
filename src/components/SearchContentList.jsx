@@ -17,13 +17,14 @@ export default function SearchContentList(props) {
             if(content.category.includes(props.title))
             {list.push(
                 <Content
-                    id={content.title}
+                    id={props.src+"_"+content.src}
                     img={content.img}
                     link={content.src}
                     title={content.title}
                     release={content.release}
                     keyword={content.keyword}
                 />)}
+                console.log(props.title+"_"+content.title)
         }
     )
 
@@ -39,7 +40,7 @@ export default function SearchContentList(props) {
     }
 
 return (
-<li className={'list '+props.title.replace(/ /g,"")}>
+<li className={'list '+props.title.replace(/ /g,"")} key={props.src}>
     <div className='list_info'>
 
         <div className='list_upside' onClick={()=>{document.getElementById(props.id).click()}}>

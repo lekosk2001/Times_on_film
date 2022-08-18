@@ -1,13 +1,10 @@
 import React, { useEffect } from 'react'
 import { Routes, Route } from "react-router-dom";
-
-
 import Aside from '../components/Aside'
 import SeachList from '../components/SeachList'
 import Detail from '../components/Detail';
 
 export default function Search(props) {
-
 
     useEffect(() => {
         window.scroll({
@@ -17,12 +14,12 @@ export default function Search(props) {
         });
     });
 
-
     let all_details = [];
     for (let i = 0; i < props.contents_all.length; i++) {
         all_details.push(
             <Route 
                 path={props.contents_all[i].src}
+                key={props.contents_all[i].src}
                 element={
                     <Detail
                         content={props.contents_all[i]}
@@ -32,8 +29,6 @@ export default function Search(props) {
         )
     }
     
-    console.log(props.contents_all.filter(content=>{ return content.category==="고대·고전"} ))
-
     return (  
     <div className="search_wrap">
         <Aside
@@ -53,7 +48,6 @@ export default function Search(props) {
             <Route path="9" element={ <SeachList mode="현대" contents_all={props.contents_all.filter(content=>{ return content.category==="현대"} )} /> } />
             {all_details}
         </Routes>
-
 
     </div>
 );

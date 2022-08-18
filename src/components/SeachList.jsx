@@ -2,9 +2,6 @@ import React, { useEffect,useState } from 'react'
 import SearchContentList from './SearchContentList'
 export default function SeachList(props) {
 
-
-
-
     const [x,setX] = useState("")
 
     let lists = document.querySelectorAll(".seachList_wrap section > ul > li");
@@ -17,24 +14,13 @@ export default function SeachList(props) {
         });
         setX("전체")
 
-        // function hide() {
-        //     document.querySelectorAll(".contents_box").map(x=>{
-        //             if(document.querySelectorAll( x +" > li").length===0){
-        //                 document.querySelectorAll(x).classList.add("hidden")
-        //         }}
-        //     )
-        // }
     },[]);
-
-    // console.log(document.querySelectorAll(".contents_box").length)
 
     const totalContentsNumber =
         props.contents_all.length.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
-    
     function handleClickRadio(e){
         setX(e.target.value)
-        // console.log(e.target.value)
 
         lists.forEach((list)=>{
 			list.classList.add("hidden");
@@ -43,8 +29,6 @@ export default function SeachList(props) {
 		})
 		}
 
-    
-    
     return (
 
         <div className='seachList_wrap'>
@@ -56,11 +40,11 @@ export default function SeachList(props) {
                     <input type="button" className="active"/>
                 </div>
 
-                <h4 className='contents_total'>
-                    총{" "}
+                <div className='contents_total'>
+                    <h4>총{" "}</h4>
                     <h2> {totalContentsNumber} </h2>
-                    {" "}개의 작품을 정리하였습니다.
-                </h4>
+                    <h4>{" "}개의 작품을 정리하였습니다.</h4>
+                </div>
 
                 <div className='tabs_wrap'>
                     <input
@@ -190,7 +174,5 @@ export default function SeachList(props) {
             </ul>
         </section>
     </div>
-
-
     )
 }

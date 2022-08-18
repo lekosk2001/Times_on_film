@@ -11,13 +11,9 @@ export default function Category(props) {
     function changeHandler(checked, id){
         if (checked) { setCheckedInputs( [...checkedInputs, id] ) } 
         else { setCheckedInputs( checkedInputs.filter((el) => el !== id) ) }
-        console.log(checkedInputs)
     };
 
-
     function categotyList (props) {
-
-
 
         if (props.type === "list"){
             let categotyList = [];
@@ -83,10 +79,8 @@ return (
                 <span>{props.title}</span>
             </span>
 
-
             <input type="button" value="×" className='category_clear_btn'/>
         </div>
-
 
         {categotyList (props)}
     </div>

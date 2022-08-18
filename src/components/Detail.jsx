@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
 
-
-
 export default function Detail(props) {
 
     useEffect(() => {
@@ -12,7 +10,6 @@ export default function Detail(props) {
             behavior: "smooth"
         });})
 
-console.log(props.content.title);
 function text_space(list){
 
     if (typeof list === 'string' ){
@@ -26,10 +23,8 @@ function text_space(list){
         )
 }
 
-
 return spaced_text
 }
-
 
 let keywords = [];
 for (let j = 0; j < props.content.keyword.length; j++) {
