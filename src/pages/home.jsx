@@ -49,7 +49,7 @@ return (
     <section className='home_section2'>
     <div className="film_container">
         <div>
-            <Link to="/search/1"><h4 className="film_text">고대·고전
+            <Link to="/search"><h4 className="film_text">고대·고전
                 <p className='film_mini' >기원전 40세기 - 4세기</p>
             </h4></Link>
             <div className="film"><Link to="/search"><div className='film_box'><img src="server/img/2007_300.jpg" alt="" /></div></Link></div>
@@ -97,7 +97,7 @@ return (
         </div>
 
         <div>
-            <Link to="/search/7"><h4 className="film_text">세계대전
+            <Link to="/search"><h4 className="film_text">세계대전
                 <p className='film_mini' >20세기 초반 - 중반</p>
             </h4></Link>
             <div className="film"><Link to="/search"><div className='film_box'><img src="server/img/2014_fury.jpg" alt="" /></div></Link></div>
@@ -113,7 +113,7 @@ return (
         </div>
 
         <div>
-            <Link to="/search/"><h4 className="film_text">현대
+            <Link to="/search"><h4 className="film_text">현대
                 <p className='film_mini' >20세기 후반 - 현재</p>
             </h4></Link>
             <div className="film"><Link to="/search"><div className='film_box'><img src="server/img/2017_1987.jpg" alt="" /></div></Link></div>

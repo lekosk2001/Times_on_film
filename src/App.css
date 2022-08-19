@@ -166,7 +166,7 @@ nav{
 /* --- 내용 --- */
 
 main{
-	top: 0px;
+	top: 7px;
 	position: relative;
 	max-width: 1440px;
 	padding: 0px 20px;
@@ -197,6 +197,7 @@ footer{
 	border-top: 1px solid var(--color_20per);
 	justify-content: center;
 	align-items: center;
+	clear: both;
 }
 
 
@@ -386,7 +387,6 @@ aside{
 
 .category{
 	margin-bottom: 10px;
-	
 	width: 190px;
 }
 
@@ -678,7 +678,7 @@ margin: 0px;
 .detail_wrap{
 	display: flex;
 	flex-direction: column;
-	width: 1180px;
+	max-width: 1180px;
 	height: 100%;
 	border-left: 1px solid var(--color_20per);
 	padding: 20px 0px 0px 30px;
@@ -724,18 +724,18 @@ margin: 0px;
 display: flex;
 flex-direction: column;
 align-items: center;
+cursor: pointer;
 }
 
 .share_logo{
 	width: 16px;
 	height: 16px;
 	border-radius: 8px;
-	background-color: var(--color_blue);
 	
 }
 
 .share_logo_label{
-	color: var(--color_blue);
+	color: var(--color_40per);
 	font-size: var(--font_mini_12px);
 	line-height: var(--font_max_24px);
 }
@@ -1007,9 +1007,46 @@ align-items: center;
 		cursor: pointer;
 	}
 
-	.menu, .login, aside{
+	.menu, .login{
 		display: none;
 	}
+
+	.search_wrap{
+		flex-direction: column;
+	}
+
+	aside{
+		/* padding: 0px; */
+		max-width: 100%;
+		width: 100%;
+		z-index: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contents_box{
+		align-items: center;
+		justify-content: center;
+	}
+
+	.category{
+		width: 100%;
+		/* margin: 0px; */
+		/* background-color: white; */
+		/* padding: 0px 10px; */
+	}
+
+	.left_info_wrap{
+		margin-right: 0px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.content{
+		max-width: 120px;
+	}
+	
 
 	.home_section1{
 		flex-direction: column;

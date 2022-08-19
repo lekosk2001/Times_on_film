@@ -68,21 +68,21 @@ return (
 
         <Category
             title={"지역"}
-            logo='server/img/globe-solid.svg'
+            logo='/server/img/globe-solid.svg'
             type={"list"}
             data={countryArr}
         />
 
         <Category
             title={"각색"}
-            logo='server/img/pen-nib-solid.svg'
+            logo='/server/img/pen-nib-solid.svg'
             type={"list"}
             data={adaptationArr}
         />
         
         <Category
             title={"키워드"}
-            logo='server/img/tag-solid.svg'
+            logo='/server/img/tag-solid.svg'
             type={"tags"}
             data={uniqueKeyword}
         />
