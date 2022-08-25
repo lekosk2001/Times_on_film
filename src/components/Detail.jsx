@@ -79,7 +79,7 @@ return (
                 </div>
 
                 <div className='detail_title_box'>
-                    <p className='detail_title_mini'>{props.content.release+" │ "+props.content.country}</p>
+                    <p className='detail_title_mini'>{props.content.englishTitle+" │ "+props.content.release+" │ "+props.content.country}</p>
                     <h2 className='detail_title'>{text_space(props.content.title)}</h2> 
                 </div>
 
