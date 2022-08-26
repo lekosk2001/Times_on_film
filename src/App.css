@@ -357,7 +357,7 @@ footer{
 			transition: all 0.2s ease;
 		}
 
-		.home_content_release_date{
+		.content_release{
 			color: var(--color_40per);
 			font-size: var(--font_mini_12px);
 			line-height: var(--font_mini_12px);
@@ -576,7 +576,7 @@ margin: 0px;
 		width: 180px;
 	}
 	.list{
-		margin-bottom: 60px;
+		margin-bottom: 50px;
 	}
 	.list_info{
 		display: flex;
@@ -1028,7 +1028,7 @@ align-items: center;
 		flex-direction: column;
 	}
 
-	.list_tags{
+	.list_tags ul{
 		display: none;
 	}
 
@@ -1040,11 +1040,6 @@ align-items: center;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-
-	.contents_box{
-		align-items: center;
-		justify-content: center;
 	}
 
 	.category{
