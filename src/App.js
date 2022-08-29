@@ -8,6 +8,7 @@ import {
 
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import Search from "./pages/Search";
 import Bookmark from "./pages/Bookmark";
 import NotFound from './pages/NotFound';
@@ -22,6 +23,7 @@ export default function App() {
 			<main>
 				<Routes>
 					<Route path="/" element={<Home contents_all={contents_all} />} />
+					<Route path="about" element={<About contents_all={contents_all}/>} />
 					<Route path="search/*" element={<Search contents_all={contents_all}/>} />
 					<Route path="bookmark" element={<Bookmark />} />
 					<Route path="*" element={<NotFound />} />

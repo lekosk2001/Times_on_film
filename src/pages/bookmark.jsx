@@ -1,7 +1,7 @@
 export default function Bookmark() {
     return (
-        <main style={{ padding: "1rem 0" }}>
+        <div className="bookmark_wrap">
             <h2>Bookmark</h2>
-        </main>
+        </div>
     );
 }

@@ -93,71 +93,68 @@ ul, li {
 /* --- 헤더 --- */
 
 
-
 nav{
+	display: flex;
+	height: 70px;
+}
+
+.nav_pc{
 	position: fixed;
 	display: flex;
 	width: 100%;
 	height: 70px;
 	background-color: var(--color_10per);
 	border-bottom: 1px solid var(--color_20per);
+	box-sizing: border-box;
 	justify-content: center;
 	align-items: center;
 	z-index: 10;
 	transition: all 0.2s ease;
 }
 
-		nav .logo a{
+		.nav_pc .logo{
+		position: absolute;
+		left: 40px;
+		transition: all 0.2s ease;
+		}
+
+		.nav_pc .logo a{
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			gap: 5px;
 		}
 
-		nav .logo{
-		position: absolute;
-		left: 40px;
+
+		.nav_pc .logo a h2{
+			line-height: var(--font_max_24px);
+		}
+		.nav_pc .logo a p{
+			line-height: var(--font_mini_12px);
 		}
 
-		nav .menu{
+		.nav_pc .menu{
+			transition: all 0.2s ease;
 			position: absolute;
 			right: 25px;
 		}
 
-		nav .menu ul{
+		.nav_pc .menu ul{
 			display: flex;
 			flex-direction: row;
 		}
 
-		nav .menu ul li{
+		.nav_pc .menu ul li{
 			font-size: var(--font_regular_16px);
 		}
 
-		nav .menu ul li a{
+		.nav_pc .menu ul li a{
 			padding: 15px;
 			transition: all 0.2s ease;
 		}
 
-		nav .menu ul li:hover a{
+		.nav_pc .menu ul li:hover a{
 			color: var(--color_blue);
-		}
-
-
-		nav .login{
-			display: none;
-			position: absolute;
-			top: 20px;
-			right: 40px;
-			width: 60px;
-			height: 30px;
-			background-color: var(--color_20per);
-			text-align: center;
-			border-radius: 4px;
-			line-height: 30px;
-			transition: all 0.2s ease;
-		}
-
-		nav .login:hover{
-			background-color: var(--color_blue);
 		}
 
 
@@ -166,8 +163,8 @@ nav{
 /* --- 내용 --- */
 
 main{
-	top: 7px;
 	position: relative;
+	height: 100%;
 	max-width: 1440px;
 	padding: 0px 20px;
 	display: flex;
@@ -178,8 +175,6 @@ main{
 
 
 .bookmark_wrap{
-	margin-top: 7px;
-	margin-bottom: 0px;
 	position: relative;
 	width: 100%;
 	}
@@ -188,7 +183,7 @@ main{
 /* --- 푸터 --- */
 
 footer{
-	position: relative;
+	/* position: relative; */
 	display: flex;
 	width: 100%;
 	height: 100px;
@@ -197,15 +192,14 @@ footer{
 	border-top: 1px solid var(--color_20per);
 	justify-content: center;
 	align-items: center;
-	clear: both;
 }
 
 
 
 /* --- 홈 --- */
 .home{
+	padding: 40px 0px;
 	position: relative;
-	top: 60px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -265,7 +259,7 @@ footer{
 
 .home_section2{
 	display: flex;
-	margin-bottom: 120px;
+	margin-bottom: 40px;
 }
 
 		.film_container {
@@ -863,10 +857,6 @@ align-items: center;
 
 @media all and (max-width:799px) {
 
-	main{
-		top:70px;
-	}
-
 	.hamburger {
 		position: absolute;
 		right: 20px;
@@ -1017,7 +1007,7 @@ align-items: center;
 		cursor: pointer;
 	}
 
-	.menu, .login{
+	.nav_pc .menu{
 		display: none;
 	}
 
@@ -1108,23 +1098,14 @@ align-items: center;
 		height: 40px;
 	}
 
-	nav .logo{
-		position: absolute;
+	.nav_pc .logo{
 		left: 20px;
-		transition: all 0.2s ease;
 		}
 
 	.detail_wrap{
 		padding-left: 0px;
 		border: 0px;
 	}
-
-	.bookmark_wrap{
-		
-		margin-top: 0px;
-		margin-bottom: 70px;
-	}
-
 
 }
 
