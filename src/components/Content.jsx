@@ -10,11 +10,15 @@ export default function Content(props) {
     if (props.release[1]<10){
         release_date_zero = "0"
     }
+    let tv_mark = [];
+    if (props.type.includes("TV 프로그램")){
+        tv_mark.push(<div className='tv_mark'>TV</div>)
+    }
 
     return (
     <li className='content' key={props.id}>
         <Link to={props.link} >
-            <div className='content_img' > <img src={"/server/img/"+props.img} alt="" /> </div>
+            <div className='content_img' > {tv_mark} <img src={"/server/img/"+props.img} alt="" /> </div>
             <h4 className='content_title'>{props.title}</h4>
             <p className='content_release'>{props.release[0]+". "+release_date_zero+props.release[1]+"."}</p>
         </Link>

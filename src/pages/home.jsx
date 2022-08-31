@@ -18,7 +18,16 @@ return (
 
     <section className='home_section1'>
         <Article
-            label="인류의 역사를 비추는 컨텐츠"
+            label="소개 및 이용안내"
+            title= "타임즈 온 필름이란?"
+            sub="역사 컨텐츠 등재기준 및 서비스 취지를 확인해보세요."
+            image="landing-ge33e12695_1280.jpg"
+            link="/about"
+        />
+
+        <Article
+
+            label="컨텐츠 찾기"
             title= "시대별로 정리된 영화와 드라마"
             sub="고대부터 현대까지 역사를 담은 컨텐츠들을 정리했습니다."
             image="horse-gb00f95245_1280.jpg"
@@ -27,16 +36,7 @@ return (
 
         <Article
 
-            label="역사적 사건 별로 검색"
-            title= "인류사에 큰 획을 남긴 사건들"
-            sub="인류의 흥망성쇠를 결정한 역사적 사건들을 확인하세요."
-            image="landing-ge33e12695_1280.jpg"
-            link="/search"
-        />
-
-        <Article
-
-            label="보고싶은 영화, 드라마를 즐겨찾기"
+            label="내가 찜한 컨텐츠"
             title= "컨텐츠를 찜하고, 평가를 공유"
             sub="컨텐츠를 보관함에 담거나, 컨텐츠를 평가할 수 있습니다."
             image="man-g6515b16d6_1280.jpg"

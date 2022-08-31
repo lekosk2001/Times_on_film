@@ -19,12 +19,12 @@ export default function SearchContentList(props) {
                 <Content
                     id={props.src+"_"+content.src}
                     img={content.img}
+                    type={content.type}
                     link={content.src}
                     title={content.title}
                     release={content.release}
                     keyword={content.keyword}
                 />)}
-                console.log(props.title+"_"+content.title)
         }
     )
 
