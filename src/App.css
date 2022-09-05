@@ -73,6 +73,13 @@ a{
 	color: #ffffff;
 }
 
+button{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+}
+
 body{
 	font-size: var(--font_regular_16px);
 	overflow-y:scroll;
@@ -81,6 +88,7 @@ body{
 	background-color: var(--color_5per);
 	color: #ffffff;
 	box-sizing: border-box;
+	word-break: keep-all;
 }
 
 ul, li {
@@ -172,16 +180,11 @@ main{
 
 
 .bookmark_wrap{
-	max-width: 1440px;
+	max-width: 1180px;
 	padding: 30px 20px;
 	position: relative;
 	width: 100%;
 	}
-
-
-.bookmark_wrap .contents_box{
-	justify-content: center;
-}
 
 .bookmark_wrap .contents_total{
 	margin-bottom: 20px;
@@ -825,6 +828,7 @@ align-items: center;
 }
 
 .info_text{
+	word-break: initial;
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: 0px 12px;
@@ -882,11 +886,35 @@ align-items: center;
 	align-items: center;
 }
 
-.about_wrap h1{
-	font-size: 36px;
-	margin-bottom: 30px;
+.about_wrap button{
+	height: 60px;
+	min-width: 240px;
+	margin: 30px 0px 80px 0px;
+	line-height: 60px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	background-color: white;
+	color: var(--color_10per);
+	font-family: inherit;
 }
 
+.about_wrap button h2{
+	transition: all 0.2s ease;
+}
+
+.about_wrap button:hover{
+	background-color: var(--color_blue);
+}
+
+.about_wrap button:hover h2{
+	color: white;
+}
+
+.about_wrap h1{
+	font-size: 36px;
+	margin-bottom: 40px;
+}
 
 .about_visual{
 	margin: auto;
@@ -903,7 +931,6 @@ align-items: center;
 	object-fit: cover;
 	
 }
-
 
 .about_wrap section{
 	margin: auto;
