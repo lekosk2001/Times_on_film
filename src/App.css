@@ -890,11 +890,11 @@ align-items: center;
 
 .about_visual{
 	margin: auto;
-	width: 50%;
+	width: 720px;
 	border-radius: 8px;
 	overflow: hidden;
 	margin-bottom: 80px;
-	max-height: 300px;
+	height: 300px;
 }
 
 .about_visual img{
@@ -910,7 +910,7 @@ align-items: center;
 	box-sizing: border-box;
 	border-left: 2px solid var(--color_blue);
 	padding-left: 20px;
-	width: 50%;
+	max-width: 720px;
 	margin-bottom: 60px;
 }
 
