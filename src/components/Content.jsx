@@ -12,13 +12,12 @@ export default function Content(props) {
     }
     let tv_mark = [];
     if (props.type.includes("TV 프로그램")){
-        tv_mark.push(<div className='tv_mark'>TV</div>)
+        tv_mark.push(<div className='tv_mark' key={props.link}>TV</div>)
     }
-
     return (
-    <li className='content' key={props.id}>
-        <Link to={props.link} >
-            <div className='content_img' > {tv_mark} <img src={"/server/img/"+props.img} alt="" /> </div>
+    <li className='content'>
+        <Link to={props.link}>
+            <div className='content_img' > {tv_mark} <img src={"/server/img/"+props.img} alt={props.title} /> </div>
             <h4 className='content_title'>{props.title}</h4>
             <p className='content_release'>{props.release[0]+". "+release_date_zero+props.release[1]+"."}</p>
         </Link>

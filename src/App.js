@@ -25,7 +25,9 @@ export default function App() {
 					<Route path="/" element={<Home contents_all={contents_all} />} />
 					<Route path="about" element={<About contents_all={contents_all}/>} />
 					<Route path="search/*" element={<Search contents_all={contents_all}/>} />
-					<Route path="bookmark" element={<Bookmark />} />
+					<Route path="bookmark" element={<Bookmark bookmarked_contents={[
+						contents_all[5],contents_all[35],contents_all[23],contents_all[17],contents_all[42],contents_all[13],contents_all[52]
+					]}/>} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</main>

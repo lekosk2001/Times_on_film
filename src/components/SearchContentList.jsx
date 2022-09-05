@@ -13,11 +13,11 @@ export default function SearchContentList(props) {
 
     let list = [];
     props.contents_all.map(
-        content => { 
+        (content,index) => { 
             if(content.category.includes(props.title))
             {list.push(
                 <Content
-                    id={props.src+"_"+content.src}
+                    key={index+content.src}
                     img={content.img}
                     type={content.type}
                     link={content.src}

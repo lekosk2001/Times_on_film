@@ -172,9 +172,19 @@ main{
 
 
 .bookmark_wrap{
-	padding: 0px 20px;
+	max-width: 1440px;
+	padding: 30px 20px;
 	position: relative;
 	width: 100%;
+	}
+
+
+.bookmark_wrap .contents_box{
+	justify-content: center;
+}
+
+.bookmark_wrap .contents_total{
+	margin-bottom: 20px;
 	}
 
 
