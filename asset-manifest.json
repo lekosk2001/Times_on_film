@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Times_on_film/static/css/main.a806f434.css",
-    "main.js": "/Times_on_film/static/js/main.aca1cee1.js",
+    "main.js": "/Times_on_film/static/js/main.ff3c3c3d.js",
     "index.html": "/Times_on_film/index.html",
     "main.a806f434.css.map": "/Times_on_film/static/css/main.a806f434.css.map",
-    "main.aca1cee1.js.map": "/Times_on_film/static/js/main.aca1cee1.js.map"
+    "main.ff3c3c3d.js.map": "/Times_on_film/static/js/main.ff3c3c3d.js.map"
   },
   "entrypoints": [
     "static/css/main.a806f434.css",
-    "static/js/main.aca1cee1.js"
+    "static/js/main.ff3c3c3d.js"
   ]
 }
