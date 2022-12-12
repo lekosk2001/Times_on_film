@@ -9,7 +9,7 @@ return (
             <h2 className='article_title'>{props.title}</h2>
             <p className='article_sub'>{props.sub}</p>
             <div className='article_image'>
-                <img src={"/server/img/"+props.image} alt={props.title}/>
+                <img src={"./server/img/"+props.image} alt={props.title}/>
             </div>
 
     </Link>
