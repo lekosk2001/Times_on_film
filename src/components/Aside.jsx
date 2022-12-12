@@ -70,7 +70,7 @@ return (
         <Category
             innerWidth={innerWidth}
             title={"구분"}
-            logo='/server/img/film-solid.svg'
+            logo={`${process.env.PUBLIC_URL}/server/img/film-solid.svg`}
             type={"list"}
             data={typeArr}
         />
@@ -78,7 +78,7 @@ return (
         <Category
             innerWidth={innerWidth}
             title={"지역"}
-            logo='/server/img/globe-solid.svg'
+            logo={`${process.env.PUBLIC_URL}/server/img/globe-solid.svg`}
             type={"list"}
             data={countryArr}
         />
@@ -86,7 +86,7 @@ return (
         <Category
             innerWidth={innerWidth}
             title={"각색"}
-            logo='/server/img/pen-nib-solid.svg'
+            logo={`${process.env.PUBLIC_URL}/server/img/pen-nib-solid.svg`}
             type={"list"}
             data={adaptationArr}
         />
@@ -94,7 +94,7 @@ return (
         <Category
             innerWidth={innerWidth}
             title={"키워드"}
-            logo='/server/img/tag-solid.svg'
+            logo={`${process.env.PUBLIC_URL}/server/img/tag-solid.svg`}
             type={"tags"}
             data={uniqueKeyword}
         />

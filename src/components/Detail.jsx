@@ -43,7 +43,7 @@ return (
     <section className='detail_wrap'>
         <div className='up_info'>
             <span>
-                <Link to="/search">
+                <Link to="..">
                     <span className='backarrow'>{"<"}</span>
                     <span className='up_title'>{props.content.category}</span>
                     <span className='up_age'>{props.content.age}</span>
@@ -55,7 +55,7 @@ return (
                 // OnClick={CopyUrlToClipboard()}
             >
                 <div className='share_logo'>
-                    <img src="/server/img/share-nodes-solid.svg" alt="share" />
+                    <img src={`${process.env.PUBLIC_URL}/server/img/share-nodes-solid.svg`} alt="share" />
                 </div>
                 <div className='share_logo_label'>Share</div>
             </span>
@@ -64,8 +64,9 @@ return (
         <div className='detail_main'>
             <span className='left_info_wrap'>
 
+            {/* logo={`${process.env.PUBLIC_URL}/server/img/film-solid.svg`} */}
                 <div className='detail_poster'>
-                    <img src={"/server/img/"+props.content.img} alt={props.content.englishTitle}></img>
+                    <img src={`${process.env.PUBLIC_URL}/server/img/${props.content.img}`} alt={props.content.englishTitle}></img>
                 </div>
 
                 <div className='detail_title_box'>

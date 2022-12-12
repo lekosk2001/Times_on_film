@@ -20,7 +20,7 @@ export default function Bookmark(props) {
                     key={index+content.src}
                     img={content.img}
                     type={content.type}
-                    link={"/search/"+content.src}
+                    link={"../Times_on_film/search/"+content.src}
                     title={content.title}
                     release={content.release}
                     keyword={content.keyword}

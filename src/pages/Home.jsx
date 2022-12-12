@@ -51,13 +51,13 @@ return (
             <Link to="/search"><h4 className="film_text">고대·고전
                 <p className='film_mini' >기원전 40세기 - 4세기</p>
             </h4></Link>
-            <div className="film"><Link to="./search"><div className='film_box'><img src="./server/img/2007_300.jpg" alt="" /></div></Link></div>
+            <div className="film"><Link to="./search"><div className='film_box'><img src={`${process.env.PUBLIC_URL}/server/img/2007_300.jpg`} alt="" /></div></Link></div>
             <div className="film_text"/>
         </div>
 
         <div>
             <div className="film_text"/>
-            <div className="film"><Link to="./search"><div className='film_box'><img src="./server/img/2018_thegreatbattle.jpg" alt="" /></div></Link></div>
+            <div className="film"><Link to="./search"><div className='film_box'><img src={`${process.env.PUBLIC_URL}/server/img/2018_thegreatbattle.jpg`} alt="" /></div></Link></div>
             <Link to="/search"><h4 className="film_text">중세 초기
                 <p className='film_mini' >5세기 - 10세기</p>
             </h4></Link>
@@ -67,13 +67,13 @@ return (
             <Link to="/search"><h4 className="film_text">중세 성기
                 <p className='film_mini' >11세기 - 13세기</p>
             </h4></Link>
-            <div className="film"><Link to="./search"><div className='film_box'><img src="./server/img/2005_kingdomofheaven.jpg" alt="" /></div></Link></div>
+            <div className="film"><Link to="./search"><div className='film_box'><img src={`${process.env.PUBLIC_URL}/server/img/2005_kingdomofheaven.jpg`} alt="" /></div></Link></div>
             <div className="film_text"/>
         </div>
 
         <div>
             <div className="film_text"/>
-            <div className="film"><Link to="./search"><div className='film_box'><img src="./server/img/2019_theking.jpg" alt="" /></div></Link></div>
+            <div className="film"><Link to="./search"><div className='film_box'><img src={`${process.env.PUBLIC_URL}/server/img/2019_theking.jpg`} alt="" /></div></Link></div>
             <Link to="/search"><h4 className="film_text">중세 말기
                 <p className='film_mini' >14세기 - 15세기</p>
             </h4></Link>
@@ -83,13 +83,13 @@ return (
             <Link to="/search"><h4 className="film_text">근세
                 <p className='film_mini' >16세기 - 18세기 중반</p>
             </h4></Link>
-            <div className="film"><Link to="./search"><div className='film_box'><img src="./server/img/2014_roaringcurrents.jpg" alt="" /></div></Link></div>
+            <div className="film"><Link to="./search"><div className='film_box'><img src={`${process.env.PUBLIC_URL}/server/img/2014_roaringcurrents.jpg`} alt="" /></div></Link></div>
             <div className="film_text"/>
         </div>
 
         <div>
             <div className="film_text"/>
-            <div className="film"><Link to="./search"><div className='film_box'><img src="./server/img/2018_mr.sunshine.jpg" alt="" /></div></Link></div>
+            <div className="film"><Link to="./search"><div className='film_box'><img src={`${process.env.PUBLIC_URL}/server/img/2018_mr.sunshine.jpg`} alt="" /></div></Link></div>
             <Link to="/search"><h4 className="film_text">근대
                 <p className='film_mini' >18세기 중반 - 20세기 초반</p>
             </h4></Link>
@@ -99,13 +99,13 @@ return (
             <Link to="/search"><h4 className="film_text">세계대전
                 <p className='film_mini' >20세기 초반 - 중반</p>
             </h4></Link>
-            <div className="film"><Link to="./search"><div className='film_box'><img src="./server/img/2014_fury.jpg" alt="" /></div></Link></div>
+            <div className="film"><Link to="./search"><div className='film_box'><img src={`${process.env.PUBLIC_URL}/server/img/2014_fury.jpg`} alt="" /></div></Link></div>
             <div className="film_text"/>
         </div>
 
         <div>
             <div className="film_text"/>
-            <div className="film"><Link to="./search"><div className='film_box'><img src="./server/img/2018_firstman.jpg" alt="" /></div></Link></div>
+            <div className="film"><Link to="./search"><div className='film_box'><img src={`${process.env.PUBLIC_URL}/server/img/2018_firstman.jpg`} alt="" /></div></Link></div>
             <Link to="/search"><h4 className="film_text">냉전
                 <p className='film_mini' >20세기 중반 - 후반</p>
             </h4></Link>
@@ -115,7 +115,7 @@ return (
             <Link to="/search"><h4 className="film_text">현대
                 <p className='film_mini' >20세기 후반 - 현재</p>
             </h4></Link>
-            <div className="film"><Link to="./search"><div className='film_box'><img src="./server/img/2017_1987.jpg" alt="" /></div></Link></div>
+            <div className="film"><Link to="./search"><div className='film_box'><img src={`${process.env.PUBLIC_URL}/server/img/2017_1987.jpg`} alt="" /></div></Link></div>
             <div className="film_text"/>
         </div>
         

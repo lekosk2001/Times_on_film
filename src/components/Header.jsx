@@ -11,7 +11,7 @@ return (
     <nav>
         <span className='nav_pc'>
             <span className='logo'>
-                <Link to="Times_on_film">
+                <Link to="/Times_on_film">
                     <p className='font_mini color_80per'>역사별 컨텐츠 검색엔진</p>
                     <h2>TIMES ON FILM</h2>
                 </Link>
@@ -19,10 +19,10 @@ return (
 
             <span className='menu'>
                 <ul>
-                    <li><Link to="Times_on_film">홈</Link></li>
-                    <li><Link to="Times_on_film/about">소개</Link></li>
-                    <li><Link to="Times_on_film/search">검색</Link></li>
-                    <li><Link to="Times_on_film/bookmark">보관함</Link></li>
+                    <li><Link to="/Times_on_film">홈</Link></li>
+                    <li><Link to="/Times_on_film/about">소개</Link></li>
+                    <li><Link to="/Times_on_film/search">검색</Link></li>
+                    <li><Link to="/Times_on_film/bookmark">보관함</Link></li>
                 </ul>
             </span>
 
@@ -36,9 +36,9 @@ return (
         
         <span className={isOpen ? "hamburger_down" : "hamburger_down hide"}>
             <ul>
-                <li><Link to="/about" onClick={()=>toggleMenu()}>소개</Link></li>
-                <li><Link to="/search" onClick={()=>toggleMenu()}>검색</Link></li>
-                <li><Link to="/bookmark" onClick={()=>toggleMenu()}>보관함</Link></li>
+                <li><Link to="./about" onClick={()=>toggleMenu()}>소개</Link></li>
+                <li><Link to="./search" onClick={()=>toggleMenu()}>검색</Link></li>
+                <li><Link to="./bookmark" onClick={()=>toggleMenu()}>보관함</Link></li>
             </ul>
         </span>
 

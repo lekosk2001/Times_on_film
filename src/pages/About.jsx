@@ -8,7 +8,7 @@ export default function About() {
                     <p>역사별 컨텐츠 검색엔진</p>
                     <h1>TIMES ON FILM</h1>
                     <div className="about_visual">
-                        <img src="/server/img/landing-ge33e12695_1280.jpg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/server/img/landing-ge33e12695_1280.jpg`} alt="" />
                     </div>
 
                 <section>
@@ -30,7 +30,7 @@ export default function About() {
                     </p>
                 </section>
 
-                <Link to="/search">
+                <Link to="../Times_on_film/search">
                     <button>
                         <h2>컨텐츠 검색</h2>
                     </button>

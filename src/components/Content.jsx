@@ -17,7 +17,7 @@ export default function Content(props) {
     return (
     <li className='content'>
         <Link to={props.link}>
-            <div className='content_img' > {tv_mark} <img src={"/server/img/"+props.img} alt={props.title} /> </div>
+            <div className='content_img' > {tv_mark} <img src={`${process.env.PUBLIC_URL}/server/img/${props.img}`} alt={props.title} /> </div>
             <h4 className='content_title'>{props.title}</h4>
             <p className='content_release'>{props.release[0]+". "+release_date_zero+props.release[1]+"."}</p>
         </Link>
