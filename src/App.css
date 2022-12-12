@@ -424,6 +424,25 @@ aside{
 	font-weight: 800;
 }
 
+.category_items_hide{
+	display: none;
+}
+
+.category_title button{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	color: var(--color_60per);
+	transition: all 0.2s ease;
+	background-color: var(--color_5per);
+	border-radius: 4px;
+
+}
+
+.category_title button:hover{
+	background-color: var(--color_20per);
+}
+
 .category_logo{
 	display: flex;
 	flex-direction: row;

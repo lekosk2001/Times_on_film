@@ -1,11 +1,13 @@
 import React, { useEffect,useState } from 'react'
-
 export default function Category(props) {
 
     useEffect(() => {
         setCheckedInputs([])
-    },[]);
+        if (props.innerWidth<800){setCategoryHide(true)}
+        else {setCategoryHide(false)}
+    },[props.innerWidth]);
 
+    const [categoryHide,setCategoryHide] = useState(false);
     const [checkedInputs, setCheckedInputs] = useState([]);
 
     function changeHandler(checked, id){
@@ -71,6 +73,7 @@ export default function Category(props) {
         }
     }
 
+
 return (
     <div className='category'>
         <div className='category_title'>
@@ -79,10 +82,13 @@ return (
                 <span>{props.title}</span>
             </span>
 
-            <input type="button" value="×" className='category_clear_btn'/>
+            <button onClick={()=>setCategoryHide((prev) => !prev)}
+            >{categoryHide?'+':'-'}</button>
         </div>
 
-        {categotyList (props)}
+        <div className={categoryHide?'category_items_hide':null}>
+            {categotyList (props)}
+        </div>
     </div>
 )
 }

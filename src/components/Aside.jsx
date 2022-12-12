@@ -1,5 +1,5 @@
-import React from 'react'
 import Category from './Category'
+import React, { useEffect,useState } from 'react'
 
 export default function Aside(props) {
     
@@ -55,11 +55,20 @@ export default function Aside(props) {
     contents_all.map(content=>{ return content.keyword.map(x=>allKeyword.push(x))})
     const uniqueKeyword = [...new Set(allKeyword)];
 
+    
+    const [innerWidth, setInnerWidth] = useState(window.innerWidth);
 
+    useEffect(() => {
+        const resizeListener = () => {
+        setInnerWidth(window.innerWidth);
+        };
+        window.addEventListener("resize", resizeListener);
+    });
 
 return (
     <aside>
         <Category
+            innerWidth={innerWidth}
             title={"구분"}
             logo='/server/img/film-solid.svg'
             type={"list"}
@@ -67,6 +76,7 @@ return (
         />
 
         <Category
+            innerWidth={innerWidth}
             title={"지역"}
             logo='/server/img/globe-solid.svg'
             type={"list"}
@@ -74,6 +84,7 @@ return (
         />
 
         <Category
+            innerWidth={innerWidth}
             title={"각색"}
             logo='/server/img/pen-nib-solid.svg'
             type={"list"}
@@ -81,6 +92,7 @@ return (
         />
         
         <Category
+            innerWidth={innerWidth}
             title={"키워드"}
             logo='/server/img/tag-solid.svg'
             type={"tags"}
