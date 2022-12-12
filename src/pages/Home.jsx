@@ -58,7 +58,7 @@ return (
         <div>
             <div className="film_text"/>
             <div className="film"><Link to="./search"><div className='film_box'><img src={`${process.env.PUBLIC_URL}/server/img/2018_thegreatbattle.jpg`} alt="" /></div></Link></div>
-            <Link to="/search"><h4 className="film_text">중세 초기
+            <Link to="./search"><h4 className="film_text">중세 초기
                 <p className='film_mini' >5세기 - 10세기</p>
             </h4></Link>
         </div>
@@ -74,7 +74,7 @@ return (
         <div>
             <div className="film_text"/>
             <div className="film"><Link to="./search"><div className='film_box'><img src={`${process.env.PUBLIC_URL}/server/img/2019_theking.jpg`} alt="" /></div></Link></div>
-            <Link to="/search"><h4 className="film_text">중세 말기
+            <Link to="./search"><h4 className="film_text">중세 말기
                 <p className='film_mini' >14세기 - 15세기</p>
             </h4></Link>
         </div>
