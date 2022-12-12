@@ -36,9 +36,9 @@ return (
         
         <span className={isOpen ? "hamburger_down" : "hamburger_down hide"}>
             <ul>
-                <li><Link to="./about" onClick={()=>toggleMenu()}>소개</Link></li>
-                <li><Link to="./search" onClick={()=>toggleMenu()}>검색</Link></li>
-                <li><Link to="./bookmark" onClick={()=>toggleMenu()}>보관함</Link></li>
+                <li><Link to="/Times_on_film/about" onClick={()=>toggleMenu()}>소개</Link></li>
+                <li><Link to="/Times_on_film/search" onClick={()=>toggleMenu()}>검색</Link></li>
+                <li><Link to="/Times_on_film/bookmark" onClick={()=>toggleMenu()}>보관함</Link></li>
             </ul>
         </span>
 
