@@ -8,9 +8,7 @@ https://lekosk2001.github.io/Times_on_film
 ![01](https://user-images.githubusercontent.com/68801887/207213572-12f59820-95c4-4337-978d-608b406c7a7d.png)
 
 
-본 서비스는 프론트엔드 개발을 학습하기 위하여 만든 개인 프로젝트로,
-API를 활용하여 서버와 통신하지 않으며 임의로 모아온 데이터를 예제로 만들어놓아 적용하였습니다.
-따라서 컨텐츠 목록의 정렬과 같은 일부 기능은 구현되어있지 않습니다.
+※ 본 서비스는 프론트엔드 개발을 학습하기 위하여 만든 개인 프로젝트로, API를 활용하여 서버와 통신하지 않으며 임의로 모아온 데이터를 예제로 만들어놓아 적용하였습니다. 따라서 컨텐츠 목록의 정렬과 같은 일부 기능은 구현되어있지 않습니다.
 
 
 
@@ -41,6 +39,10 @@ API를 활용하여 서버와 통신하지 않으며 임의로 모아온 데이�
 ![03](https://user-images.githubusercontent.com/68801887/207213682-abcd2abc-ebd0-44bd-be26-d040594e8f45.png)
 
 ![04](https://user-images.githubusercontent.com/68801887/207213943-e4b5399b-cd02-485d-bebf-c3f1293143ed.png)
+
+![08](https://user-images.githubusercontent.com/68801887/207214373-c55dd89d-7906-45f5-b0f2-b26af71edee3.png)
+
+
 
 
 
