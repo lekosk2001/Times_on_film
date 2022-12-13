@@ -1005,6 +1005,10 @@ align-items: center;
 
 @media all and (max-width:799px) {
 
+	.home_section2{
+		display: none;
+	}
+
 	.hamburger {
 		position: absolute;
 		right: 20px;
